@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RGB" Height="200" Width="300">
+
+    <Grid x:Name="colorGrid" Background="Black">
+        <StackPanel VerticalAlignment="Center">
+            <Slider x:Name="redSlider" Minimum="0" Maximum="255" Margin="20,10" Value="0"/>
+            <Slider x:Name="greenSlider" Minimum="0" Maximum="255" Margin="20,10" Value="0"/>
+            <Slider x:Name="blueSlider" Minimum="0" Maximum="255" Margin="20,10" Value="0"/>
+        </StackPanel>
+    </Grid>
+</Window>

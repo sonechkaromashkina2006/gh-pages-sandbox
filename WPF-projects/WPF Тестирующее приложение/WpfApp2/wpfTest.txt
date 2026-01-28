@@ -1,0 +1,22 @@
+1. Какой язык программирования используется в WPF?
+C#
+Java
+Python
+C#
+
+2. Какие из перечисленных элементов являются контейнерами в WPF?
+Grid
+StackPanel
+Button
+Canvas
+Grid,StackPanel,Canvas
+
+3. Что означает аббревиатура WPF?
+Windows Presentation Foundation
+
+4. Что изображено на картинке?
+C:\Users\user\Pictures\Screenshots\Screenshot 2025-12-09 133503.png
+Логотип WPF
+Логотип WinForms
+Логотип .NET
+Логотип WPF

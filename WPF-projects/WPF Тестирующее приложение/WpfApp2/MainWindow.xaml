@@ -1,0 +1,138 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Тестирование" Height="650" Width="800">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel x:Name="mainStackPanel" 
+                    Orientation="Vertical" 
+                    Margin="20">
+
+            <TextBlock x:Name="titleText" 
+                       Text="Тест по WPF" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock x:Name="resultText" 
+                       Text="Результат: 0/0" 
+                       FontSize="16" 
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,20"/>
+
+            <!-- Вопрос 1 (RadioButton) -->
+            <Border x:Name="question1Border"
+                    BorderBrush="Gray" 
+                    BorderThickness="1" 
+                    Padding="15" 
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock x:Name="q1Text" 
+                               Text="Вопрос 1" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,10"/>
+
+                    <RadioButton x:Name="q1Radio1" 
+                                 GroupName="Question1" 
+                                 Margin="5"/>
+                    <RadioButton x:Name="q1Radio2" 
+                                 GroupName="Question1" 
+                                 Margin="5"/>
+                    <RadioButton x:Name="q1Radio3" 
+                                 GroupName="Question1" 
+                                 Margin="5"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Вопрос 2 (CheckBox) -->
+            <Border x:Name="question2Border"
+                    BorderBrush="Gray" 
+                    BorderThickness="1" 
+                    Padding="15" 
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock x:Name="q2Text" 
+                               Text="Вопрос 2" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,10"/>
+
+                    <CheckBox x:Name="q2Check1" Margin="5"/>
+                    <CheckBox x:Name="q2Check2" Margin="5"/>
+                    <CheckBox x:Name="q2Check3" Margin="5"/>
+                    <CheckBox x:Name="q2Check4" Margin="5"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Вопрос 3 (TextBox) -->
+            <Border x:Name="question3Border"
+                    BorderBrush="Gray" 
+                    BorderThickness="1" 
+                    Padding="15" 
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock x:Name="q3Text" 
+                               Text="Вопрос 3" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,10"/>
+
+                    <TextBox x:Name="q3TextBox" 
+                             Height="60" 
+                             TextWrapping="Wrap" 
+                             VerticalScrollBarVisibility="Auto"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Вопрос 4 (RadioButton с картинкой) -->
+            <Border x:Name="question4Border"
+                    BorderBrush="Gray" 
+                    BorderThickness="1" 
+                    Padding="15" 
+                    Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock x:Name="q4Text" 
+                               Text="Вопрос 4" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,10"/>
+
+                    <Image x:Name="questionImage" 
+                           Width="150" 
+                           Height="150" 
+                           Margin="0,5,0,10"/>
+
+                    <RadioButton x:Name="q4Radio1" 
+                                 GroupName="Question4" 
+                                 Margin="5"/>
+                    <RadioButton x:Name="q4Radio2" 
+                                 GroupName="Question4" 
+                                 Margin="5"/>
+                    <RadioButton x:Name="q4Radio3" 
+                                 GroupName="Question4" 
+                                 Margin="5"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Кнопки -->
+            <StackPanel x:Name="buttonsPanel" 
+                        Orientation="Horizontal" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,30,0,0">
+                <Button x:Name="loadButton" 
+                        Content="Загрузить вопросы из файла" 
+                        Width="200" 
+                        Height="35" 
+                        Margin="10"/>
+                <Button x:Name="checkButton" 
+                        Content="Проверить ответы" 
+                        Width="150" 
+                        Height="35" 
+                        Margin="10"/>
+                <Button x:Name="resetButton" 
+                        Content="Сбросить" 
+                        Width="120" 
+                        Height="35" 
+                        Margin="10"/>
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
