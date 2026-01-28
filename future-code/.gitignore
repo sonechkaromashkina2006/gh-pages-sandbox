@@ -1,0 +1,54 @@
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+
+# Debug files
+*.pdb
+*.idb
+*.ilk
+*.db
+
+# Object files
+*.obj
+*.o
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+*.tlog/
+*.log
+*.recipe
+*.ipch/
+*.aps
+*.ncb
+*.suo
+*.cachefile
+
+# Build directories
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleasePublic/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+build/
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE
+.idea/
+*.swp
+*.swo
